@@ -8,16 +8,22 @@
 }
 
 #display {
-    width: 100%;
+    width: 277px;
+    height: 50px;
     margin-bottom: 10px;
     padding: 10px;
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 .buttons {
-    display: grid;
+    display: grid; 
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+}
+
+.buttons button:active {
+    transform: scale(0.9); /* Уменьшение размера кнопки */
+    transition: transform 0.1s; /* Плавное изменение размера */
 }
 
 button {
@@ -27,7 +33,8 @@ button {
 }
 
 button:hover {
-    background-color: #f0f0f0;
+    transform: scale(1.1); /* Увеличение размера кнопки на 10% при наведении */
+    
 }
 
 .empty {
