@@ -28,3 +28,19 @@ function removeLastCharacter() {
     const currentValue = display.value; // Получаем текущее значение из поля отображения
     display.value = currentValue.slice(0, -1); // Удаляем последний символ и устанавливаем обновленное значение
 }
+
+function square() {
+    const display = document.getElementById("display"); // Получаем доступ к полю отображения
+    const currentValue = display.value; // Получаем текущее значение из поля отображения
+    const number = parseFloat(currentValue); // Преобразуем текущее значение в число
+    const result = Math.pow(number, 2); // Возводим число в квадрат
+    display.value = result; // Обновляем значение поля отображения с результатом возведения в квадрат
+}
+
+function squareRoot() {
+    const display = document.getElementById("display"); // Получаем доступ к полю отображения
+    const currentValue = display.value; // Получаем текущее значение из поля отображения
+    const number = parseFloat(currentValue); // Преобразуем текущее значение в число
+    const result = Math.sqrt(number); // Вычисляем квадратный корень из числа
+    display.value = result; // Обновляем значение поля отображения с результатом вычисления квадратного корня
+}

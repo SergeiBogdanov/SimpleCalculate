@@ -34,3 +34,19 @@ button:hover {
     visibility: hidden; /* Скрываем пустую кнопку */
 }
 
+.clear-button {
+    background-color: #DC143C;
+    
+}
+
+.equal-button {
+    background-color: rgb(70, 130, 180);
+    
+}
+
+.backspace-button {
+    background-color: #FF6347;
+}
+
+
+
