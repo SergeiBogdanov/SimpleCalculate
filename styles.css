@@ -2,6 +2,54 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+    background-color: #F8F8FF;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center; /* Выравниваем текст в центре */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Используем flexbox для выравнивания элементов */
+    justify-content: space-around; /* Распределение пространства между элементами */
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li:last-child {
+    margin-right: 0px; /* Убираем правый отступ у последнего элемента */
+}
+
+nav ul li a {
+    
+    color: #000000; /* Изменяем цвет текста на белый */
+    font-size: 1.5em; /* Увеличиваем размер шрифта */
+    text-decoration: none;
+    display: block; /* Делаем элементы блочными */
+    padding: 20px 40px; /* Увеличиваем отступы вокруг текста */
+    background-color: #D3D3D3; /* Изменяем цвет фона */
+    border-radius: 10px; /* Добавляем скругленные углы */
+    text-align: center; /* Выравниваем текст по центру */
+    transition: background-color 0.3s; /* Добавляем плавный переход цвета фона */
+}
+
+/* Добавляем стили для hover состояния кнопок меню */
+nav ul li a:hover {
+    background-color: #C0C0C0; /* Изменяем цвет фона при наведении */
+}
+
+nav ul li a img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
 .calculator {
     width: 300px;
     margin: 50px auto;
@@ -59,51 +107,20 @@ button:hover {
     background-color: #FF6347;
 }
 
-header {
-    background-color: #F8F8FF;
-    color: #000000;
-    padding: 20px 0;
-    text-align: center; /* Выравниваем текст в центре */
+.counting-board {
+    position: relative;
+    margin: 50px auto;
+    width: 313px;
+    height: 447px;
+    overflow: hidden; /* чтобы изображение не выходило за границы родительского элемента */
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Используем flexbox для выравнивания элементов */
-    justify-content: space-around; /* Распределение пространства между элементами */
+.counting-board img {
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    user-select: none; /* чтобы изображение не выделялось */
 }
 
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li:last-child {
-    margin-right: 0; /* Убираем правый отступ у последнего элемента */
-}
-
-nav ul li a {
-    color: #000000;
-    font-size: 1.3em; /* Увеличиваем размер шрифта */
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 30px; /* Увеличиваем отступы вокруг текста */
-}
-
-nav ul li a img {
-    width: 40px;
-    height: 40px;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-/* Добавим вертикальную линию между кнопками */
-.menu::after {
-    content: '';
-    display: block;
-    width: 1px;
-    height: 30px;
-    background-color: #000;
-    margin-left: 10px;
-}
 

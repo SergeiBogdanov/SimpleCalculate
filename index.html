@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
     <header>
-        <nav class="menu">
+        <nav>
             <ul>
-                <li><a href="index.html"><img src="CalculatorIcon.png" alt="Калькулятор"> Калькулятор</a></li>
-                <li><a href="index.html"><img src="CountingBoardIcon.png" alt="Счетная доска"> Счетная доска</a></li>
+                <li><a href="#" id="calculator-tab"><img src="CalculatorIcon.png" alt="Калькулятор"> Калькулятор</a></li>
+                <li><a href="#" id="counting-board-tab"><img src="CountingBoardIcon.png" alt="Счетная доска"> Счетная доска</a></li>
             </ul>
         </nav>
     </header>
+
+    <div id="calculator-content" class="content" style="display: block;">
     <div class="calculator">
         <input type="text" id="display" readonly>
         <div class="buttons">
@@ -44,6 +49,23 @@
             <button class="equal-button" onclick="calculate()">=</button>
         </div>
     </div>
+    </div>
+
+     <div id="counting-board-content" class="content" style="display: none;">
+        <!-- Контент для счетной доски -->
+        <!-- Этот блок будет отображаться при выборе вкладки "Счетная доска" -->
+        <div class="counting-board">
+            <img src="CountingBoard.png" alt="Счетная доска">
+        
+        
+        </div>
+    </div>
+
+
+    </div>
+
+
     <script src="calculate.js"></script>
+
 </body>
 </html>

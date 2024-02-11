@@ -44,3 +44,24 @@ function squareRoot() {
     const result = Math.sqrt(number); // Вычисляем квадратный корень из числа
     display.value = result; // Обновляем значение поля отображения с результатом вычисления квадратного корня
 }
+
+// Получаем ссылки на вкладки и контенты
+const calculatorTab = document.getElementById("calculator-tab");
+const countingBoardTab = document.getElementById("counting-board-tab");
+const calculatorContent = document.getElementById("calculator-content");
+const countingBoardContent = document.getElementById("counting-board-content");
+
+// Добавляем обработчики событий для клика по вкладкам
+calculatorTab.addEventListener("click", function() {
+    // Скрываем контент счетной доски и показываем контент калькулятора
+    countingBoardContent.style.display = "none";
+    calculatorContent.style.display = "block";
+});
+
+countingBoardTab.addEventListener("click", function() {
+    // Скрываем контент калькулятора и показываем контент счетной доски
+    calculatorContent.style.display = "none";
+    countingBoardContent.style.display = "block";
+});
+
+// Перемещение счетной доски
