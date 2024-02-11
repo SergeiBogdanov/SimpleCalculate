@@ -63,5 +63,3 @@ countingBoardTab.addEventListener("click", function() {
     calculatorContent.style.display = "none";
     countingBoardContent.style.display = "block";
 });
-
-// Перемещение счетной доски
